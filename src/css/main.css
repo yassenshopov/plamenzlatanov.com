@@ -97,4 +97,9 @@ main #hero img {
     align-self: center;
     width: 140%;
   }
+
+  .carousel {
+    height: 50vh;
+    margin: 0;
+  }
 }
