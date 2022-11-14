@@ -34,7 +34,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  backdrop-filter: brightness(1.1) blur(4px) saturate(1.5);
+  backdrop-filter: brightness(1.1) blur(4px) saturate(1.2);
   z-index: 3;
   margin: 0;
 }
@@ -58,6 +58,8 @@ footer {
   gap: 5vw;
   padding: 20px;
   backdrop-filter: brightness(1.1) blur(4px) saturate(1.5);
+  font-family: var(--font2);
+  margin: 50px 0 0 0;
 }
 
 footer #icons {
