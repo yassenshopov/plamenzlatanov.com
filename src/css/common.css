@@ -1,6 +1,6 @@
 :root {
-  --color1: #da984c;
-  --color2: #bd6808;
+  --color1: #ffcf94;
+  --color2: #f58f13;
   --font1: 'Roboto', Sans-Serif;
   --font2: 'Lora', Serif;
 }
@@ -28,24 +28,42 @@ body * {
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 0px;
+  padding: 0 0vw 0 0vw;
   position: fixed;
   top: 0;
   width: 100%;
+  max-width: 100%;
   backdrop-filter: brightness(1.1) blur(4px) saturate(1.2);
   z-index: 3;
   margin: 0;
 }
 
-nav img {
-  width: 5vw;
-  transition: all 400ms ease-out;
-  padding: 10px 2vw 10px 2vw;
+nav .icons {
+  display: flex;
+  flex-direction: row;
+  margin-right: 5vw;
+  gap: 0px;
 }
 
-nav img:hover {
+nav .icons a img:hover {
+  opacity: 0.8;
+}
+
+nav .icons a img {
+  width: 3vw;
+  margin: 0;
+}
+
+nav img:nth-child(1) {
+  margin-left: 5vw;
+  padding: 10px 2vw 10px 2vw;
+  width: 5vw;
+  transition: all 400ms ease-out;
+}
+
+nav img:nth-child(1):hover {
   filter: brightness(1.5);
 }
 
@@ -78,7 +96,15 @@ footer p {
 }
 
 @media screen and (max-width: 800px) {
-  nav img {
+  nav {
+    justify-content: center;
+  }
+
+  nav .icons {
+    display: none;
+  }
+
+  nav img:nth-child(1) {
     width: 22vw;
   }
 

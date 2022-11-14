@@ -59,29 +59,17 @@ main #hero img {
   flex-direction: row;
   overflow-x: scroll;
   margin: 20px 6vw 20px 6vw;
+  border-radius: 12.5px;
+  box-shadow: 0 0 10px #00000090;
 }
 
 .carousel::-webkit-scrollbar {
   display: none;
 }
 
-.carousel * {
-  animation: slide 25s linear infinite;
-}
-
 .carousel img {
   max-height: 80vh;
 }
-
-/* @keyframes slide {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-3700px, 0, 0);
-  }
-} 
-*/
 
 @media screen and (max-width: 800px) {
   main {
@@ -119,5 +107,6 @@ main #hero img {
   .carousel {
     height: 50vh;
     margin: 0;
+    border-radius: 0;
   }
 }
