@@ -65,6 +65,24 @@ main #hero img {
   display: none;
 }
 
+.carousel * {
+  animation: slide 25s linear infinite;
+}
+
+.carousel img {
+  height: 80vh;
+}
+
+/* @keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-3700px, 0, 0);
+  }
+} 
+*/
+
 @media screen and (max-width: 800px) {
   main {
     margin: calc(30px + 22vw) 0 0 0;
