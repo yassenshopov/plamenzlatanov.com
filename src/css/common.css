@@ -1,0 +1,57 @@
+:root {
+  --color1: #da984c;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color1);
+}
+
+body * {
+  /* border: 1px solid #121212; */
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: brightness(1.1) blur(4px) saturate(1.1);
+  /* box-shadow: 0 0 30px var(--color1); */
+}
+
+nav img {
+  width: 5vw;
+  transition: all 400ms ease-out;
+}
+
+nav img:hover {
+  filter: saturate(1.5);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+footer #icons {
+  display: flex;
+  flex-direction: row;
+}
+
+footer #icons img {
+  width: 3vw;
+  padding: 10px 1vw 10px 1vw;
+}
+
+footer p {
+  text-align: center;
+}
