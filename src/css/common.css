@@ -74,6 +74,7 @@ footer #icons img {
 
 footer p {
   text-align: center;
+  font-size: 15px;
 }
 
 @media screen and (max-width: 800px) {

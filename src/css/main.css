@@ -19,7 +19,7 @@ main #hero #hero_txt {
   flex-direction: column;
   position: absolute;
   top: 110px;
-  left: 7%;
+  left: 5%;
   color: aliceblue;
 }
 
@@ -33,7 +33,7 @@ main #hero h2 {
 }
 
 main #hero h2 {
-  width: 35%;
+  width: 33%;
   font-size: 28px;
   margin-bottom: 0;
   font-family: var(--font2);
@@ -58,7 +58,7 @@ main #hero img {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
-  margin: 0 6vw 0 6vw;
+  margin: 20px 6vw 20px 6vw;
 }
 
 .carousel::-webkit-scrollbar {
@@ -70,7 +70,7 @@ main #hero img {
 }
 
 .carousel img {
-  height: 80vh;
+  max-height: 80vh;
 }
 
 /* @keyframes slide {
