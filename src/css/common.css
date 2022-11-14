@@ -5,7 +5,13 @@
 body {
   margin: 0;
   padding: 0;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
   background-color: var(--color1);
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 body * {
@@ -22,7 +28,6 @@ nav {
   top: 0;
   width: 100%;
   backdrop-filter: brightness(1.1) blur(4px) saturate(1.1);
-  /* box-shadow: 0 0 30px var(--color1); */
 }
 
 nav img {
@@ -39,6 +44,7 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  bottom: 0;
   padding: 20px;
 }
 
@@ -54,4 +60,25 @@ footer #icons img {
 
 footer p {
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  nav img {
+    width: 22vw;
+  }
+
+  footer {
+    flex-direction: column-reverse;
+    filter: invert();
+    padding: 20px 20vw 30px 20vw;
+    font-size: 20px;
+  }
+
+  footer #icons {
+    gap: 5vw;
+  }
+
+  footer #icons img {
+    width: 10vw;
+  }
 }

@@ -1,4 +1,4 @@
 main {
-  margin: calc(5vw + 20px);
+  margin-top: calc(5vw + 20px);
   height: 100vh;
 }
