@@ -7,7 +7,6 @@ for (let i=0; i<carousels.length; i++) {
 function scrollRight() {
     // console.log(carousels)
     for (let carousel=0; carousel<carousels.length; carousel++) {
-        console.log(carousels[carousel].scrollLeft)
         carousels[carousel].scrollLeft += 2;
         if (!(temp_dict[carousel].includes(carousels[carousel].scrollLeft))) {
             temp_dict[carousel].push(carousels[carousel].scrollLeft)
@@ -20,4 +19,4 @@ function scrollRight() {
 
 let t = setInterval(() => {
     scrollRight();
-}, 12);
+}, 16);

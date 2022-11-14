@@ -20,7 +20,6 @@ main #hero #hero_txt {
   position: absolute;
   top: 110px;
   left: 5%;
-  color: aliceblue;
 }
 
 main #hero p,
@@ -41,6 +40,9 @@ main #hero h2 {
 
 main #hero p {
   width: 30%;
+}
+
+main p {
   font-size: 18px;
   font-family: var(--font2);
 }
@@ -54,13 +56,49 @@ main #hero img {
   width: 100%;
 }
 
+main .txt_box {
+  margin: 50px 6vw 50px 6vw;
+}
+
+main #videos div {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 6vw 20px 6vw;
+  gap: 5vw;
+}
+
+main #videos div:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+main #videos iframe {
+  width: 70%;
+  height: 400px;
+}
+
+main #videos div aside {
+  display: flex;
+  flex-direction: column;
+}
+
+main #about {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 80px 6vw 0 6vw;
+}
+
+main #about img {
+  border-radius: 12.5px;
+  box-shadow: 0 0 10px #00000060;
+}
+
 .carousel {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
   margin: 20px 6vw 20px 6vw;
   border-radius: 12.5px;
-  box-shadow: 0 0 10px #00000090;
+  box-shadow: 0 0 10px #00000060;
 }
 
 .carousel::-webkit-scrollbar {
@@ -102,6 +140,30 @@ main #hero img {
     justify-self: center;
     align-self: center;
     width: 140%;
+  }
+
+  main #videos div {
+    flex-direction: column-reverse;
+  }
+
+  main #videos div:nth-child(2n) {
+    flex-direction: column-reverse;
+  }
+
+  main #videos iframe {
+    width: 100%;
+    margin: 0;
+    height: 40vh;
+  }
+
+  main #about {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  main #about img {
+    box-shadow: none;
+    border-radius: 0;
   }
 
   .carousel {

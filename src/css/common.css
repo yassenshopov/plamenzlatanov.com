@@ -1,5 +1,5 @@
 :root {
-  --color1: #ffcf94;
+  --color1: #f1b468;
   --color2: #f58f13;
   --font1: 'Roboto', Sans-Serif;
   --font2: 'Lora', Serif;
@@ -15,6 +15,7 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
   background: linear-gradient(90deg, var(--color1), var(--color2));
+  color: #f1f1f1;
 }
 
 body::-webkit-scrollbar {
@@ -95,6 +96,11 @@ footer p {
   font-size: 15px;
 }
 
+footer p a {
+  /* text-decoration: none; */
+  color: #f1f1f1;
+}
+
 @media screen and (max-width: 800px) {
   nav {
     justify-content: center;
@@ -110,7 +116,7 @@ footer p {
 
   footer {
     flex-direction: column-reverse;
-    padding: 20px 20vw 30px 20vw;
+    padding: 20px 15vw 30px 15vw;
     font-size: 20px;
   }
 
