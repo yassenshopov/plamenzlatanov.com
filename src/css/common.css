@@ -115,7 +115,7 @@ footer p a {
   }
 
   footer {
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding: 20px 15vw 30px 15vw;
     font-size: 20px;
   }
