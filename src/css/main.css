@@ -74,6 +74,8 @@ main #videos div:nth-child(2n) {
 main #videos iframe {
   width: 70%;
   height: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00000060;
 }
 
 main #videos div aside {
