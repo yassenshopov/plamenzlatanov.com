@@ -109,6 +109,10 @@ main #about img {
   max-height: 80vh;
 }
 
+#comics_carousel {
+  gap: 5vw;
+}
+
 @media screen and (max-width: 800px) {
   main {
     margin: calc(30px + 22vw) 0 0 0;
