@@ -26,7 +26,8 @@ main #hero p,
 main #hero h2 {
   display: inline-block;
   z-index: 2;
-  filter: brightness(1.1);
+  filter: brightness(1.2);
+  color: #121212;
   background: var(--color1);
   padding: 10px;
   border-radius: 10px;
