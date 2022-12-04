@@ -200,6 +200,22 @@ main #about img {
     width: 140%;
   }
 
+  .triple {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content min-content;
+    margin: 20px 6vw 20px 6vw;
+    gap: 5vw;
+  }
+
+  .triple img {
+    height: 100%;
+  }
+
+  .triple img:nth-child(n + 4) {
+    /* border: 5px solid white; */
+    margin: 0;
+  }
+
   main #videos div {
     flex-direction: column-reverse;
   }
