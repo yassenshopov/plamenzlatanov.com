@@ -101,12 +101,51 @@ main #about img {
   box-shadow: 0 0 10px #00000060;
 }
 
+.double {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-auto-rows: min-content; */
+  grid-template-rows: min-content min-content;
+  margin: 20px 6vw 20px 6vw;
+  gap: 5vw;
+}
+
+.double img {
+  width: 100%;
+  height: 100%;
+  /* aspect-ratio: 9/10; */
+  background-size: cover;
+  box-shadow: 0 0 10px #00000060;
+}
+
+.triple {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-auto-rows: min-content; */
+  /* grid-template-rows: max-content; */
+  margin: 100px 2vw 0px 2vw;
+  gap: 2vw;
+}
+
+.triple img {
+  width: 100%;
+  height: 80%;
+  /* aspect-ratio: 9/10; */
+  object-fit: cover;
+  background-position: center;
+  box-shadow: 0 0 10px #00000060;
+}
+
+.triple img:nth-child(n + 4) {
+  /* border: 5px solid white; */
+  margin: -50px 0 -0px 0;
+}
+
 .carousel {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
   margin: 20px 6vw 20px 6vw;
-  border-radius: 12.5px;
   box-shadow: 0 0 10px #00000060;
 }
 
@@ -116,6 +155,12 @@ main #about img {
 
 .carousel img {
   max-height: 80vh;
+  transition: all 300ms ease-in-out;
+}
+
+.carousel img:hover {
+  box-shadow: 0 0 10px #00000090;
+  filter: contrast(1.3) saturate(1.2);
 }
 
 #comics_carousel {
