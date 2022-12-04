@@ -132,7 +132,7 @@ main #about img {
   height: 80%;
   /* aspect-ratio: 9/10; */
   object-fit: cover;
-  background-position: center;
+  /* background-position: center; */
   box-shadow: 0 0 10px #00000060;
 }
 

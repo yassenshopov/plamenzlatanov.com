@@ -4,6 +4,28 @@ for (let i=0; i<carousels.length; i++) {
     temp_dict[i] = []
 }
 
+// const isHover = h => h.parentElement.querySelector(':hover') === h;    
+
+// function checkHover() {
+//     const hovered = isHover(myDiv);
+//     if (hovered !== checkHover.hovered) {
+//       // alert(hovered ? 'hovered' : 'not hovered')
+//       if (hovered) {
+//           // alert("!")
+//           myDiv.style.border = "5px solid white"
+//       } else {
+//           // alert("!")
+//           myDiv.style.border = "0px solid white"
+//       }
+  
+//       // console.log(hovered ? 'hovered' : 'not hovered');
+//       checkHover.hovered = hovered;
+//     }
+// }
+
+// const myDiv = document.getElementById('hero');
+// document.addEventListener('mousemove', checkHover);
+
 function scrollRight() {
     // console.log(carousels)
     for (let carousel=0; carousel<carousels.length; carousel++) {
