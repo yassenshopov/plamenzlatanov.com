@@ -91,14 +91,11 @@ footer #icons img {
   padding: 10px 1vw 10px 1vw;
 }
 
-footer p {
+footer p,
+footer a {
   text-align: center;
   font-size: 15px;
-}
-
-footer p a {
-  /* text-decoration: none; */
-  color: #f1f1f1;
+  color: #121212;
 }
 
 @media screen and (max-width: 800px) {

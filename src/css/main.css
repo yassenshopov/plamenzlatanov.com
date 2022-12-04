@@ -75,9 +75,10 @@ main #videos div:nth-child(2n) {
 
 main #videos iframe {
   width: 70%;
-  height: 400px;
+  /* height: 400px; */
   border-radius: 12px;
   box-shadow: 0 0 10px #00000060;
+  aspect-ratio: 16/9;
 }
 
 main #videos div aside {
@@ -89,6 +90,10 @@ main #about {
   display: flex;
   flex-direction: row-reverse;
   margin: 80px 6vw 0 6vw;
+}
+
+main #about .txt_box p {
+  font-size: 20px;
 }
 
 main #about img {
@@ -161,7 +166,8 @@ main #about img {
   main #videos iframe {
     width: 100%;
     margin: 0;
-    height: 40vh;
+    /* height: 40vh; */
+    aspect-ratio: 16/9;
   }
 
   main #about {
