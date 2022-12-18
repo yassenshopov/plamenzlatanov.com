@@ -42,3 +42,31 @@ function scrollRight() {
 let t = setInterval(() => {
     scrollRight();
 }, 16);
+
+let lightbox = document.getElementById("lightbox");
+let img = document.querySelector("#lightbox img");
+
+document.body.onmousedown = function (e) {
+    let elementId = e.target;
+    if ((e.srcElement.constructor.name == "HTMLImageElement") && (e.srcElement.id != "logo")) {
+        addLightbox(e.srcElement.src)
+    } else {
+        rmvLightbox();
+    }
+  }
+
+document.querySelector("body").addEventListener('keydown', function(event) {
+    const key = event.key;
+    if (key == "Enter" || key == "Escape" || key == "Backspace") {
+        rmvLightbox();  
+    }
+});
+
+function addLightbox(url) {
+    img.src = url;
+    lightbox.style.display = "flex";
+};
+
+function rmvLightbox() {
+    lightbox.style.display = "none";  
+}

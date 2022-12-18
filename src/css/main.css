@@ -1,3 +1,38 @@
+#lightbox {
+  position: fixed;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  /* padding: 20vw; */
+  box-sizing: border-box;
+  top: 0;
+  background-color: #00000099;
+  z-index: 22;
+  display: none;
+}
+
+#lightbox img {
+  height: 80vh;
+  width: auto;
+}
+
+.back-arrow {
+  position: absolute;
+  padding: 1vw;
+  bottom: 5vh;
+  right: 3vw;
+  width: 10px;
+  height: 10px;
+  background-image: url('../images/meta/left-arrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+
 main {
   margin: 95px 0 0 0;
   min-height: 100vh;
@@ -168,6 +203,15 @@ main #about img {
 }
 
 @media screen and (max-width: 800px) {
+  #lightbox img {
+    height: auto;
+    width: 100%;
+  }
+
+  .back-arrow {
+    right: 8vw;
+  }
+
   main {
     margin: calc(30px + 22vw) 0 0 0;
   }
