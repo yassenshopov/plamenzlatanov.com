@@ -48,7 +48,8 @@ let img = document.querySelector("#lightbox img");
 
 document.body.onmousedown = function (e) {
     let elementId = e.target;
-    if ((e.srcElement.constructor.name == "HTMLImageElement") && (e.srcElement.id != "logo")) {
+    console.log(e.srcElement.alt)
+    if ((e.srcElement.constructor.name == "HTMLImageElement") && (e.srcElement.id != "logo") && (e.srcElement.alt != "Mail_Social_Link") && (e.srcElement.alt != "Instagram_Social_Link")) {
         addLightbox(e.srcElement.src)
     } else {
         rmvLightbox();

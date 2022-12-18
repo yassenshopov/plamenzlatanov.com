@@ -54,6 +54,7 @@ main #hero #hero_txt {
   flex-direction: column;
   position: absolute;
   top: 110px;
+  width: fit-content;
   left: 5%;
 }
 
@@ -69,14 +70,14 @@ main #hero h2 {
 }
 
 main #hero h2 {
-  width: 33%;
+  width: 33vw;
   font-size: 28px;
   margin-bottom: 0;
   font-family: var(--font2);
 }
 
 main #hero p {
-  width: 30%;
+  width: 30vw;
 }
 
 main p {
